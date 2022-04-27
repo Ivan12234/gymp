@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Gymnasio</title>
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+   <link rel="stylesheet" href="./bootstrap.min.css" > 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+   
+      
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="#"><img class="logo" src="logo.png" alt="logo"></a>
+      
+
+        <ul class="enlaces-menu">
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Pagos</a></li>
+            <li><a href="#">Membrecia</a></li>
+          
+        </ul>
+
+        <button class="ham" type="button">   
+            <span class="br-1"></span>
+            <span class="br-2"></span>
+            <span class="br-3"></span>
+        </button>                       
+    </nav>
+</header>
+
+<script src="main.js"></script>
+
+
+<script src="main.js"></script>
+  <div class="constainer p-4">
+    <div class="row ">
+
+    <div class="col-md-4">
+      <div class="card card-body my-2 animated tada">
+          <input type="text" id="id" hidden >
+             <div class="form-group">
+                <input 
+                   class="form-control"
+                   type="text" 
+                   id="Nombres"
+                   placeholder="Nombres">
+             </div>
+            <div class="form-group">
+                <input 
+                  class="form-control"
+                  type="text"
+                  id="Apellidos"
+                  step="50"
+                  min="0" 
+                  placeholder="Apellidos">
+            </div>
+        
+
+
+ <p> Elige un Roll:   
+<select  class="form-control" id="tipo" placeholder="Seleccione">
+<option value ="4">Cliente</option>
+<option value ="3">Caja</option>
+<option value ="2">Entrenador</option>
+<option value ="1">Administrador</option>
+</select> 
+</p>  
+
+<p>Elige una opcion: 
+  <select  class="form-control" id="estado" placeholder="Seleccione">
+    <option>Activo</option>
+    <option>Inactivo</option>
+    
+  </select>
+</p>
+
+
+
+  </div>
+            <div>
+              <button id="btnform"
+                 class="btn btn-primary" >
+                 Agregar
+             </button>
+
+              <button id="btnUpdate"
+                 class="btn btn-success" >
+                 Actualizar
+             </button>
+          </div>
+            
+    
+         </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card card-body my-2 animated fadeInRight">
+        <table class="table table-hover table-dark">
+
+            <thead>
+                <tr>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Apellidos</th>
+                
+                    <th scope="col">estado</th>
+                    <th scope="col">tipo</th>
+                </tr>
+            </thead>
+            <tbody id="mylist">
+           
+           </tbody>
+        </table>
+   </div> 
+   </div>
+</div>
+</body>
+</html>
